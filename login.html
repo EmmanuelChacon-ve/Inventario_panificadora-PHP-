@@ -1,0 +1,94 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./vista/css/logins.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@1,700&display=swap" rel="stylesheet">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script defer src="./vista/js/registera.js"></script>
+
+    <link rel="icon" href="./vista/img/logo.png" type="image/x-icon">
+    <title>Login TaBomPan</title>
+</head>
+<div>
+    <div class="container">
+
+        <div class="registro">
+            <div class="titulo">
+                <img src="./vista/img/logo.png" alt="logo de la empresa">
+            </div>
+            <div class="regristro-texto">
+                <p class="texto">
+                    Registrate para que puedas disfrutar de todas nuestras funcionalidades
+                </p>
+            </div>
+            <div class="botones">
+                <button class="loginBtn loginBtn--facebook">
+                    Login with Facebook
+                </button>
+
+                <button class="loginBtn loginBtn--google">
+                    Login with Google
+                </button>
+            </div>
+            <div class="decoracion">
+            </div>
+        </div>
+        <div class="register">
+            <div class="decoracion-register" "></div>
+            <div class=" form-container">
+                <div class="alert">
+                    <div class="mensaje error"></div>
+                </div>
+
+
+
+
+                <form action="./controlador/insert.php" method="post" class="formulario">
+                    <div class="form">
+                        <div class="section">
+                            <h1>Registro de Usuario</h1>
+                        </div>
+                        <div class="form__container">
+
+
+                            <input type="text" class="form__input" name="username" autocomplete="off" placeholder=" "
+                                onblur="campoVacio(value)" />
+                            <label for="exampleInputEmail1" class="form__label">Usuario:</label>
+                        </div>
+                        <div class="form__container">
+
+                            <input type="text" class="form__input" name="name" autocomplete="off" placeholder=" "
+                                onblur="campoVacio(value)" />
+                            <label for="exampleInputEmail1" class="form__label">Nombre:</label>
+                        </div>
+                        <div class="form__container">
+                            <input type="password" class="form__input" name="password" autocomplete="off"
+                                placeholder="  " onblur="validarPassword(value,this)" />
+                            <label for="exampleInputPassword1" class="form__label">Contraseña:</label>
+
+                        </div>
+
+                        <div class="form__container">
+
+
+                            <input type="password" class="form__input" name="cfpassword" placeholder=" " />
+                            <label for="exampleInputPassword1" class="form__label">Confirmar:</label>
+                        </div>
+                        <div class="form-button">
+                            <button type="submit" class="submit">Registrar ahora</button>
+                            <a href="./index.html"><button type="button" class="submit">Volver</button></a>
+                        </div>
+                    </div>
+                </form>
+                <br>
+
+            </div>
+            </form>
+        </div>
+        </body>
+
+</html>

@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+/*header*/
+:root{
+    --main--color: rgba(238,215,181,0.65);
+    --color--texto: rgb(191, 117, 5);
+}
+
+
+/* Selects*/
+.pan-insumo{
+    height: 80vh;
+    width: 90vw;
+    margin: 10px auto;
+    padding: 20px;
+    border: 2px solid #000;
+}
+
+.pan-insumo span{
+    display: block;
+    font-size: 25px;
+}
+
+.selects{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+select{
+    text-align: center;
+    width: 310px;
+    cursor: pointer;
+    appearance: none;
+    padding: 10px 10px;
+    background: none;
+    transition: all .5s ease 0s;
+    margin: 10px 10px;
+}
+
+select:focus,
+select:hover{
+    background-color: rgba(203, 201, 227, 0.751);
+}
+
+
+/* cerrando Selects*/
+
+/*Disponibilidad*/
+
+.disponible{
+    outline:  2px solid red;
+    margin: 10px 10px;
+    text-align: center;
+    display: block;
+    padding: 20px 20px;
+}
+
+
+/*Cerrando disponibilidad*/
+

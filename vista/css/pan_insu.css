@@ -1,0 +1,140 @@
+
+
+:root{
+    --main--color: rgba(238,215,181,0.65);
+    --color--texto: rgb(191, 117, 5);
+    --color--boton: rgba(224, 172, 94, 0.557);
+}
+/* Selects*/
+.pan-insumo{
+    height: 80vh;
+    width: 90vw;
+    margin: 10px auto;
+    padding: 20px;
+    border: 2px solid #000;
+}
+
+.pan-insumo span{
+    display: block;
+    font-size: 25px;
+}
+
+.selects{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+select{
+    text-align: center;
+    width: 310px;
+    cursor: pointer;
+    appearance: none;
+    padding: 10px 10px;
+    background: none;
+    transition: all .5s ease 0s;
+    margin: 10px 10px;
+}
+
+select:focus,
+select:hover{
+    background-color: rgba(203, 201, 227, 0.751);
+}
+
+
+/* cerrando Selects*/
+
+/*Disponibilidad*/
+
+.disponible{
+    margin: 10px 10px;
+    color: black;
+    font-size: 30px;
+    font-weight:  500;
+    text-align: center;
+    display: block;
+    padding: 20px 20px;
+}
+/*Cerrando disponibilidad*/
+
+/* inicio para botones CRUD */
+
+.utilidad{
+    height: 15%;
+    outline: 2px solid red;
+    width: 95%;
+    margin: auto auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    visibility: hidden;
+}
+
+.button{
+    font-family: "Montserrat",sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+    padding: 10px;
+    height: 50px;
+    width: 200px;
+    background: none;
+    transition: all 1s ease 0s;
+    cursor: pointer;
+   
+}
+
+.button:hover{
+    background-color: var(--color--boton);
+}
+/* fin para botones CRUD */
+.botones-insumos{
+    display: flex;
+    margin: 0 auto;
+    padding: 100px;
+}
+#agg{
+    margin: 0 auto;
+    margin-left: 40px;
+}
+/* inicio crud */
+
+.editar{
+    height: 25%;
+    visibility: hidden;
+}
+
+.editar form{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.editar form .valor-nuevo{
+    height: 50px;
+}
+
+.button2{
+    font-family: "Montserrat",sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+    padding: 10px;
+    height: 50px;
+    width: 200px;
+    background: none;
+    transition: all 1s ease 0s;
+    cursor: pointer;
+}
+
+.button2:hover{
+    background-color: var(--color--boton);
+}
+
+
+/* fin crud */
+
